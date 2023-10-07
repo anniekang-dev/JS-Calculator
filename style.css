@@ -14,6 +14,7 @@ body {
   height: 550px;
   border-radius: 50px;
   padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .calculator__display--for-advanced {
   background-color: #ffffff;
@@ -30,6 +31,7 @@ body {
   margin-top: 45px;
   border: none;
   text-align: right;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 input:focus {
@@ -43,29 +45,13 @@ input:focus {
   margin-top: 15px;
   padding: 15px;
   border-radius: 20px;
-}
-.clear__and__enter {
-  text-align: center;
-  height: 50px;
-}
-.clear__and__enter > button {
-  border-radius: 10px;
-  width: 143px;
-  height: 60px;
-  background-color: #9a6565; 
-  cursor: pointer;
-  outline: none;
-  border: none;
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-top: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .button__row {
   border-radius: 10px;
   text-align: center;
   height: 50px;
-  margin: 14px;
+  margin: 15px;
   background-color: #ffffff;
 }
 .button__row > button {
@@ -77,14 +63,14 @@ input:focus {
   cursor: pointer;
   outline: none;
   background-color: #c5bfbf;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .button__row > .operator {
   color: #ffffff;
-  background-color: #313132;
+  background-color: #855e5e;
 }
 .button__row > .double {
-  width: 145px;
+  width: 143px;
 }
 .button__row > .isPressed {
   background-color: #619e82;
