@@ -1,3 +1,7 @@
+body {
+  background-color: #3e3e3e;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -14,7 +18,7 @@
 .calculator__display--for-advanced {
   background-color: #ffffff;
   height: 80px;
-  width: 323px;
+  width: 350px;
   border-radius: 20px;
   font-size: 45px;
   display: flex;
@@ -24,7 +28,14 @@
   overflow: hidden;
   overflow-wrap: break-word;
   margin-top: 45px;
+  border: none;
+  text-align: right;
 }
+
+input:focus {
+  outline: none;
+}
+
 .calculator__buttons {
   background-color: #ffffff;
   width: 320px;
@@ -65,7 +76,7 @@
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: #bdb2b2;
+  background-color: #c5bfbf;
   margin-top: 25px;
 }
 .button__row > .operator {
