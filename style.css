@@ -16,7 +16,8 @@ body {
   padding: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.calculator__display--for-advanced {
+.calculator_input {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   height: 80px;
   width: 350px;
@@ -34,11 +35,11 @@ body {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-input:focus {
+input {
   outline: none;
 }
 
-.calculator__buttons {
+.calculator_buttons {
   background-color: #ffffff;
   width: 320px;
   height: 350px;
@@ -47,15 +48,15 @@ input:focus {
   border-radius: 20px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.button__row {
+
+.button_row {
   border-radius: 10px;
   text-align: center;
   height: 50px;
   margin: 15px;
-  background-color: #ffffff;
 }
-.button__row > button {
-  font-size: 25px;
+.button_row > button {
+  font-size: 24px;
   width: 69px;
   height: 57px;
   border-radius: 10px;
@@ -65,13 +66,19 @@ input:focus {
   background-color: #c5bfbf;
   margin-top: 5px;
 }
-.button__row > .operator {
+
+.button_row > button:hover {
+  background-color: #bb9f9f;
+}
+
+.button_row > .operator {
   color: #ffffff;
   background-color: #855e5e;
 }
-.button__row > .double {
+.button_row > .double {
   width: 143px;
 }
-.button__row > .isPressed {
+
+.button_row > .isPressed {
   background-color: #619e82;
 }
