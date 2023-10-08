@@ -1,3 +1,3 @@
 ## JS-Calculator
 
-<img width="791" alt="Screenshot 2023-10-07 at 10 46 30 AM" src="https://github.com/anniekang-dev/JS-Calculator/assets/137893369/6314ac05-bd21-41a2-8525-37f9e86856ef">
+<img width="742" alt="Screenshot 2023-10-08 at 6 49 50 PM" src="https://github.com/anniekang-dev/JS-Calculator/assets/137893369/cd4e0e7e-cbce-4376-a6a0-63e54cb08829">
