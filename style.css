@@ -16,7 +16,7 @@ body {
   padding: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.calculator_input {
+.calculator_display {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   height: 80px;
@@ -43,7 +43,7 @@ input {
   background-color: #ffffff;
   width: 320px;
   height: 350px;
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 15px;
   border-radius: 20px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -52,33 +52,33 @@ input {
 .button_row {
   border-radius: 10px;
   text-align: center;
-  height: 50px;
-  margin: 15px;
+  height: 51px;
+  margin: 13px;
 }
-.button_row > button {
-  font-size: 24px;
-  width: 69px;
-  height: 57px;
+
+.button_row button {
+  width: 70px;
+  height: 60px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: #c5bfbf;
+  background-color: #7b7575;
+  color: #fff;
   margin-top: 5px;
+  font-size: 30px;
 }
 
 .button_row > button:hover {
-  background-color: #bb9f9f;
+  background-color: rgba(0, 0, 0, 0.222);
+  color: #855e5e;
 }
 
 .button_row > .operator {
   color: #ffffff;
   background-color: #855e5e;
 }
+
 .button_row > .double {
   width: 143px;
-}
-
-.button_row > .isPressed {
-  background-color: #619e82;
 }
