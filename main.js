@@ -2,6 +2,7 @@ const display = document.querySelector('input');
 const number = document.querySelectorAll('.number');
 const clear = document.querySelector('.all-clear');
 const del = document.querySelector('.delete');
+const decimal = document.querySelector('.decimal');
 
 // number button click event handler
 number.forEach(button => {
@@ -19,4 +20,9 @@ del.addEventListener('click', () => {
 // display all clear
 clear.addEventListener('click', () => {
   display.value = '';
+});
+
+decimal.addEventListener('click', () => {
+  let value = e.target.innerText;
+  display.value += value;
 });
