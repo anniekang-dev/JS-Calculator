@@ -1,11 +1,20 @@
 const display = document.querySelector('input');
-const number = document.querySelectorAll('.number');
+const numbers = document.querySelectorAll('.number');
+const operators = document.querySelectorAll('.operator');
 const clear = document.querySelector('.all-clear');
 const del = document.querySelector('.delete');
 const decimal = document.querySelector('.decimal');
 
 // number button click event handler
-number.forEach(button => {
+numbers.forEach(button => {
+  button.addEventListener('click', (e) => {
+    let value = e.target.innerText;
+    display.value += value;
+  })
+});
+
+// operator button click event handler
+operators.forEach(button => {
   button.addEventListener('click', (e) => {
     let value = e.target.innerText;
     display.value += value;
@@ -23,6 +32,6 @@ clear.addEventListener('click', () => {
 });
 
 decimal.addEventListener('click', () => {
-  let value = e.target.innerText;
-  display.value += value;
+  display.value = value;
 });
+

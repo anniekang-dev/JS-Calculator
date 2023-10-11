@@ -8,13 +8,13 @@
 <body> 
     <div class="container">
       <div class="calculator">
-        <input type=text class="calculator_display"></input>
+        <input type=text class="calculator_display" placeholder="0"></input>
         <div class="calculator_buttons">
           <div class="button_row">
             <button class="operator all-clear">AC</button>
             <button class="operator delete">Del</button>
             <button class="operator">%</button>
-            <button class="operator divide">÷</button>
+            <button class="operator divide">/</button>
           </div>
           <div class="button_row">
             <button class="number">7</button>
@@ -37,7 +37,7 @@
           <div class="button_row">
             <button class="number double">0</button>
             <button class="number decimal">.</button>
-            <button class="operator equals">=</button>
+            <button class="operator" onclick="result()">=</button>
           </div>
         </div>
       </div>
