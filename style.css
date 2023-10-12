@@ -79,17 +79,12 @@ input {
   background-color: #855e5e;
 }
 
-.button_row > .all-clear {
+.button_row > .otherkeys {
   color: #ffffff;
   background-color: #855e5e;
 }
 
-.button_row > .delete {
-  color: #ffffff;
-  background-color: #855e5e;
-}
-
-.button_row > .double {
+.button_row > .zero {
   width: 143px;
 }
 
