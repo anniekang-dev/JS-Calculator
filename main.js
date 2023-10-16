@@ -5,18 +5,29 @@ const clear = document.querySelector('.all-clear');
 const del = document.querySelector('.delete');
 const decimal = document.querySelector('.decimal');
 
+let operatorOn = '';
+let previousNum = '';
+let resentNum = '';
+let result = null;
+let withDot = false;
+
 // number button click event handler
-numbers.forEach(button => {
-  button.addEventListener('click', (e) => {
+numbers.forEach(number => {
+  number.addEventListener('click', (e) => {
     let value = e.target.innerText;
-    display.value += value;
+    if (value === '.' && !withDot){
+      withDot = true;
+    } else if (value === '.' && withDot){
+      return;
+    }
+    resentNum += value;
+    display.value = resentNum;
   })
 });
 
 // operator button click event handler
 operators.forEach(button => {
   button.addEventListener('click', (e) => {
-    let value = e.target.innerText;
     display.value += value;
   })
 });
@@ -29,9 +40,7 @@ del.addEventListener('click', () => {
 // display all clear
 clear.addEventListener('click', () => {
   display.value = '';
+  previousNum = '';
+  operatorOn = '';
+  resentNum = '';
 });
-
-decimal.addEventListener('click', () => {
-  display.value = value;
-});
-

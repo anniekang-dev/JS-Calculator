@@ -91,3 +91,7 @@ input {
 .button_row > .decimal {
   background-color: #855e5e;
 }
+
+.button_row > .equal {
+  background-color: #855e5e;
+}
