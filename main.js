@@ -55,6 +55,7 @@ del.addEventListener('click', () => {
 
 // display all clear
 clear.addEventListener('click', () => {
+  window.location.reload();
   display.value = '0';
   previousNum = '';
   operatorOn = '';
