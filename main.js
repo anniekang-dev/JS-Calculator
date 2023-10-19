@@ -25,13 +25,20 @@ numbers.forEach(number => {
   })
 });
 
-// operator button click event handler
-operators.forEach(button => {
-  button.addEventListener('click', (e) => {
-    display.value += value;
-  })
-});
-
+// // operator button click event handler
+// operators.forEach(operator => {
+//   operator.addEventListener('click', (e) => {
+//     if(!resentNum) result;
+//     withDot = false;
+//     const operatorName = value;
+//     if(resentNum && previousNum && operatorOn) {
+//       mathOperator();
+//     }else {
+//       result = parseFloat(resentNum);
+//     }
+//   })
+// });
+ 
 // delete button click event handler
 del.addEventListener('click', () => {
   display.value = display.value.slice(0, -1);
@@ -39,8 +46,9 @@ del.addEventListener('click', () => {
 
 // display all clear
 clear.addEventListener('click', () => {
-  display.value = '';
+  display.value = '0';
   previousNum = '';
   operatorOn = '';
   resentNum = '';
+  result = '';
 });
