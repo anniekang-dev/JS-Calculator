@@ -39,17 +39,17 @@ numbers.forEach(number => {
 //     }
 //   })
 // });
- 
+
 // delete button click event handler
 del.addEventListener('click', () => {
   display.value = display.value.slice(0, -1);
   if (display.value === '') {
     display.value = '0';
   } else {
-  previousNum = '';
-  operatorOn = '';
-  resentNum = '';
-  result = '';
+    previousNum = '';
+    operatorOn = '';
+    resentNum = '';
+    result = '';
   }
 });
 
