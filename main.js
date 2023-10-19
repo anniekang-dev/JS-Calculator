@@ -10,6 +10,7 @@ let previousNum = '';
 let resentNum = '';
 let result = null;
 let withDot = false;
+display.value='0';
 
 // number button click event handler
 numbers.forEach(number => {
@@ -41,7 +42,11 @@ numbers.forEach(number => {
  
 // delete button click event handler
 del.addEventListener('click', () => {
-  display.value = display.value.slice(0, -1);
+  if (display.value === '') {
+    display.value = '0';
+  } else {
+    display.value = display.value.slice(0, -1);
+  }
 });
 
 // display all clear
