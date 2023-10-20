@@ -51,6 +51,9 @@ del.addEventListener('click', () => {
     resentNum = '';
     result = '';
   }
+  if (display.value === '0') {
+    window.location.reload();
+  }
 });
 
 // display all clear
