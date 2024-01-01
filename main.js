@@ -8,6 +8,7 @@ const decimal = document.querySelector('.decimal');
 let operatorOn = '';
 let previousNum = '';
 let resentNum = '';
+let pendingNum;
 let result = null;
 let withDot = false;
 display.value='0';
@@ -21,24 +22,12 @@ numbers.forEach(number => {
     } else if (value === '.' && withDot){
       return;
     }
+    if (display.value === '0') { 
+    }
     resentNum += value;
     display.value = resentNum;
   })
 });
-
-// // operator button click event handler
-// operators.forEach(operator => {
-//   operator.addEventListener('click', (e) => {
-//     if(!resentNum) result;
-//     withDot = false;
-//     const operatorName = value;
-//     if(resentNum && previousNum && operatorOn) {
-//       mathOperator();
-//     }else {
-//       result = parseFloat(resentNum);
-//     }
-//   })
-// });
 
 // delete button click event handler
 del.addEventListener('click', () => {
